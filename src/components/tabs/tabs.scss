@@ -1,0 +1,26 @@
+.tabs {
+  margin-bottom: 40px;
+}
+
+.tabs__link {
+  margin-right: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: $darkShade100;
+
+  &:hover {
+    color: $darkShade50;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &_active {
+    border-bottom: 2px solid #000;
+
+    &:hover {
+      color: $darkShade100;
+    }
+  }
+}

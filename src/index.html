@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Test</title>
+</head>
+
+<body>
+  <div class="page">
+    <div class="page__wrapper">
+      <div class="tabs" data-type="email">
+        <a data-name="email" href="#" class="tabs__link tabs__link_active">Sign up with email</a>
+        <a data-name="phone" href="#" class="tabs__link">Sign up with phone</a>
+      </div>
+
+      <form class="form">
+        <div id="email" class="input form__group">
+          <label class="input__label">Email address</label>
+          <input type="text" name="email" class="input__field">
+          <div class="input__error">Enter a valid email</div>
+        </div>
+
+        <div id="phone" class="input form__group hide">
+          <label class="input__label">Phone number</label>
+          <input type="number" name="phone" class="input__field">
+          <div class="input__error">Enter a valid phone</div>
+        </div>
+
+        <div class="switch form__group">
+          <label for="switch_dollar" class="switch__label">$</label>
+          <div class="switch__control">
+            <input id="switch_dollar" class="switch__input" type="radio" name="switch_currency" value="dollar" checked>
+            <input id="switch_pound" class="switch__input" type="radio" name="switch_currency" value="pound">
+          </div>
+          <label for="switch_pound" class="switch__label">£</label>
+        </div>
+
+        <div class="input-checkbox form__group">
+          <input id="terms" name="terms" type="checkbox" class="input-checkbox__field">
+          <label for="terms" class="input-checkbox__label">
+            <a class="input-checkbox__link" href="#">Terms and conditions</a> 
+          </label>
+        </div>
+
+        <div class="input-checkbox form__group">
+          <input id="promo" name="promo" type="checkbox" class="input-checkbox__field">
+          <label for="promo" class="input-checkbox__label">
+            <a class="input-checkbox__link" href="#">Promo notifications</a> 
+          </label>
+        </div>
+        <div class="spinner"></div>
+        <button class="btn form__group" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
